@@ -1,0 +1,289 @@
+User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Change background color to black */
+      color: #fff; /* Set text color to white */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #add8e6; /* Change header background color to light blue */
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    form {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    form input[type="text"] {
+      padding: 12px; /* Increased padding */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 300px; /* Increased width */
+    }
+    form button {
+      padding: 12px 20px; /* Increased padding */
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+    main {
+      padding: 20px 0;
+    }
+    .video-thumbnails {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+    .video-thumbnail {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+    .video-thumbnail:hover {
+      transform: translateY(-5px);
+    }
+    .video-thumbnail img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .video-thumbnail-info {
+      padding: 10px;
+    }
+    .video-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .video-description {
+      margin-bottom: 0;
+    }
+    /* Sidebar Styles */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      background-color: #333;
+      padding-top: 20px;
+      color: #fff;
+    }
+    .sidebar ul {
+      padding-left: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .sidebar ul li a:hover {
+      color: #add8e6;
+    }
+    .content {
+      margin-left: 250px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Downloads</a></li>
+    </ul>
+  </div>
+  <!-- Main Content Area -->
+  <div class="content">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>YouTube Clone</h1>
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Profile</a></li>
+            <!-- Add more navigation links as needed -->
+          </ul>
+          <!-- Search Bar -->
+          <form action="#" method="GET">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Content Area -->
+    <main>
+      <div class="container">
+        <!-- Video Thumbnails Section -->
+        <section class="video-thumbnails">
+          <!-- Example Thumbnails -->
+          <!-- Add more video thumbnails as needed -->
+          <!-- Example Thumbnail 1 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 1</h2>
+              <p class="video-description">Description of Video 1</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 2 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 2">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 2</h2>
+              <p class="video-description">Description of Video 2</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Add more video thumbnails as needed -->
+          <!-- Example Thumbnail 3 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 3">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 3</h2>
+              <p class="video-description">Description of Video 3</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 4 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 4">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 4</h2>
+              <p class="video-description">Description of Video 4</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 5 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 5">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 5</h2>
+              <p class="video-description">Description of Video 5</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 6 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 6">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 6</h2>
+              <p class="video-description">Description of Video 6</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 7 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 7">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 7</h2>
+              <p class="video-description">Description of Video 7</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 8 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 8">
+            </a>
+            <div class="video-thumbnail-info">
+              <h2 class="video-title">Video Title 8</h2>
+              <p class="video-description">Description of Video 8</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 9 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 9">
+            </a>
+            <div class="brooo">
+              <h2 class="video-title">Video Title 9</h2>
+              <p class="video-description">Description of Video 9</p> <!-- Add description here -->
+            </div>
+          </div>
+          <!-- Example Thumbnail 10 -->
+          <div class="video-thumbnail">
+            <a href="#">
+              <img src="https://techcrunch.com/wp-content/uploads/2023/02/alexander-shatov-niUkImZcSP8-unsplash.jpg?w=730&crop=1" alt="Video Thumbnail 10">
+            </a>
+            <div class="hiiii">
+              <h2 class="video-title">Video Title 10</h2>
+              <p class="video-description">Description of Video 10</p> <!-- Add description here -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 YouTube Clone. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!-- Bootstrap JS, Popper.js, and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
